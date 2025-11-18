@@ -3,19 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|c:\\users\\yrbri\\unity_projects\\yung - intermediatehwf25\\assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|c:\\users\\yrbri\\unity_projects\\yung - intermediatehwf25\\assets\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|solutionrelative:assets\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|c:\\users\\yrbri\\unity_projects\\yung - intermediatehwf25\\assets\\mainmenuassets\\menuoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|solutionrelative:assets\\mainmenuassets\\menuoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\assets\\menu_changecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|solutionrelative:assets\\menu_changecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\assets\\mainmenuassets\\iselectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|solutionrelative:assets\\mainmenuassets\\iselectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|c:\\users\\yrbri\\unity_projects\\yung - intermediatehwf25\\assets\\scripts\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\assets\\scripts\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|c:\\users\\yrbri\\unity_projects\\yung - intermediatehwf25\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|c:\\users\\yrbri\\unity_projects\\yung - intermediatehwf25\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9253F6B5-4A2B-1ACE-4F57-9CF9BBE55270}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,19 +59,68 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\InputManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InputManager.cs",
-              "ToolTip": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\InputManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InputManager.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\UIManager.cs",
+              "ToolTip": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\UIManager.cs",
+              "RelativeToolTip": "Assets\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T21:35:03.852Z",
+              "WhenOpened": "2025-11-18T17:00:10.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MenuOptions.cs",
+              "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\MainMenuAssets\\MenuOptions.cs",
+              "RelativeDocumentMoniker": "Assets\\MainMenuAssets\\MenuOptions.cs",
+              "ToolTip": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\MainMenuAssets\\MenuOptions.cs",
+              "RelativeToolTip": "Assets\\MainMenuAssets\\MenuOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:42:20.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu_ChangeCanvas.cs",
+              "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Menu_ChangeCanvas.cs",
+              "RelativeDocumentMoniker": "Assets\\Menu_ChangeCanvas.cs",
+              "ToolTip": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Menu_ChangeCanvas.cs",
+              "RelativeToolTip": "Assets\\Menu_ChangeCanvas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:40:52.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISelectable.cs",
+              "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\MainMenuAssets\\ISelectable.cs",
+              "RelativeDocumentMoniker": "Assets\\MainMenuAssets\\ISelectable.cs",
+              "ToolTip": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\MainMenuAssets\\ISelectable.cs",
+              "RelativeToolTip": "Assets\\MainMenuAssets\\ISelectable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:33:10.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InputManager.cs",
+              "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\InputManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InputManager.cs",
+              "ToolTip": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\InputManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InputManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:35:03.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IDamageable.cs",
               "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\IDamageable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IDamageable.cs",
@@ -63,12 +128,11 @@
               "RelativeToolTip": "Assets\\Scripts\\IDamageable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T21:18:09.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T21:18:09.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -76,12 +140,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T21:18:08.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T21:18:08.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "CollectableObserver.cs",
               "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\CollectableObserver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CollectableObserver.cs",
@@ -93,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "PlayerStatus.cs",
               "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\PlayerStatus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerStatus.cs",
@@ -105,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
@@ -113,12 +176,11 @@
               "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T23:42:20.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T23:42:20.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "ObjectStatus.cs",
               "DocumentMoniker": "C:\\Users\\yrbri\\Unity_Projects\\Yung - IntermediateHWF25\\Assets\\Scripts\\ObjectStatus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectStatus.cs",

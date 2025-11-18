@@ -362,6 +362,10 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.62f3/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/FoodSlider.cs"
 "Assets/Input/ThirdPerson.cs"
+"Assets/MainMenuAssets/ISelectable.cs"
+"Assets/MainMenuAssets/LoadScene.cs"
+"Assets/MainMenuAssets/MenuOptions.cs"
+"Assets/Menu_ChangeCanvas.cs"
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/ClickButtonUI.cs"
@@ -383,6 +387,7 @@
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerStatus.cs"
 "Assets/Scripts/SaveManager.cs"
+"Assets/UIManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+

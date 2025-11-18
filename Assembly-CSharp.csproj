@@ -62,11 +62,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MoveUp.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
+    <Compile Include="Assets\Menu_ChangeCanvas.cs" />
     <Compile Include="Assets\Scripts\MoveToRespawnPointOnTrigger.cs" />
     <Compile Include="Assets\Scripts\SaveManager.cs" />
+    <Compile Include="Assets\UIManager.cs" />
     <Compile Include="Assets\Scripts\ClickButtonUI.cs" />
+    <Compile Include="Assets\MainMenuAssets\MenuOptions.cs" />
     <Compile Include="Assets\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\EffectOnDestroy.cs" />
+    <Compile Include="Assets\MainMenuAssets\ISelectable.cs" />
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\ObjectStatus.cs" />
     <Compile Include="Assets\FoodSlider.cs" />
@@ -80,6 +84,7 @@
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\PlayerJump.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\MainMenuAssets\LoadScene.cs" />
     <Compile Include="Assets\Scripts\ColorChange.cs" />
     <Compile Include="Assets\Input\ThirdPerson.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />

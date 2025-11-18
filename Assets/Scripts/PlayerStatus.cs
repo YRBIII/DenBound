@@ -9,12 +9,14 @@ public class PlayerStatus : ObjectStatus
 
     private void OnEnable()
     {
-        InputManager.OnJump += HandleJump; // Connects to jump input events
+        InputManager.OnJump += HandleJump;
+        Collectable.collect += OnBerryCollected; // Subscribe to berry collection
     }
 
     private void OnDisable()
     {
-        InputManager.OnJump -= HandleJump; // Stops using when disabled to avoid errors
+        InputManager.OnJump -= HandleJump;
+        Collectable.collect -= OnBerryCollected; // Unsubscribe to avoid errors
     }
 
     private void HandleJump(float value)
