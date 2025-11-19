@@ -8,6 +8,8 @@ public class InputManager : MonoBehaviour
 
     public static Action<float> OnJump;
     public static Action<Vector2> OnMove; // 🟢 new movement event
+    public static Action OnMenuAction;
+    public static Action OnSelect;
 
     private ThirdPerson actions;
 
@@ -32,6 +34,12 @@ public class InputManager : MonoBehaviour
 
         actions.MouseAndKeyboard.Move.performed += InvokeMove; // 🟢 listen for movement
         actions.MouseAndKeyboard.Move.canceled += InvokeMove;
+
+        actions.MouseAndKeyboard.MenuAction.performed += InvokeMenuAction;
+        actions.MouseAndKeyboard.MenuAction.canceled += InvokeMenuAction;
+
+        actions.MouseAndKeyboard.Select.performed += InvokeSelect;
+        actions.MouseAndKeyboard.Select.canceled += InvokeSelect;
     }
 
     private void OnDisable()
@@ -42,9 +50,24 @@ public class InputManager : MonoBehaviour
         actions.MouseAndKeyboard.Move.performed -= InvokeMove;
         actions.MouseAndKeyboard.Move.canceled -= InvokeMove;
 
+        actions.MouseAndKeyboard.MenuAction.performed -= InvokeMenuAction;
+        actions.MouseAndKeyboard.MenuAction.canceled -= InvokeMenuAction;
+
+        actions.MouseAndKeyboard.Select.performed += InvokeSelect;
+        actions.MouseAndKeyboard.Select.canceled += InvokeSelect;
+
         actions.Disable();
     }
 
+    private void InvokeMenuAction(InputAction.CallbackContext ctx)
+    {
+        OnMenuAction.Invoke();
+    }
+
+    private void InvokeSelect(InputAction.CallbackContext ctx)
+    {
+        OnSelect?.Invoke();
+    }
     private void InvokeJump(InputAction.CallbackContext ctx)
     {
         float value = ctx.ReadValue<float>();
