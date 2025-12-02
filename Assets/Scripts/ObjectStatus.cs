@@ -27,7 +27,7 @@ public class ObjectStatus : MonoBehaviour, IDamageable
         health -= damage;              
         onDamage?.Invoke(soundOnDamage, volume, loop); // Trigger any damage sounds
 
-        if (health <= 0)                // Check for death or health loss
+        if (health == 0)                // Check for death or health loss
         {
             scriptToCallOnAllHealthLost.PlayEffect(); // Calls the effect 
 

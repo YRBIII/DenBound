@@ -2,27 +2,31 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] private Transform target;
-    [SerializeField] private Vector3 offset = new Vector3(0, 5, -10);
-    [SerializeField] private float smoothSpeed = 5f;
-    [SerializeField] private float rotationSpeed = 3f;
+    [SerializeField] private Transform player;
+    [SerializeField] private float maxY = 30;
+    [SerializeField] private float minY = -30;
+    [SerializeField] private bool invertY;
+    private Vector2 cameraRotation = Vector2.zero;
 
-    private float yaw = 0f;
-    private float pitch = 10f; // slightly above player
-
-    private void LateUpdate()
+    private void OnEnable()
     {
-        if (target == null) return;
+        Cursor.lockState = CursorLockMode.Locked;
+        InputManager.onMouseDelta += SetDirection;
+    }
 
-        // Mouse rotation
-        yaw += Input.GetAxis("Mouse X") * rotationSpeed;
-        pitch -= Input.GetAxis("Mouse Y") * rotationSpeed;
-        pitch = Mathf.Clamp(pitch, -20f, 45f);
+    private void SetDirection(Vector2 dir)
+    {
+        dir.y = invertY ? -dir.y : dir.y;
 
-        Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
-        Vector3 desiredPosition = target.position + rotation * offset;
+        cameraRotation.x += dir.x;
+        cameraRotation.y += dir.y;
+        player.localRotation = Quaternion.Euler(0f, cameraRotation.x, 0f);
+        transform.localRotation = Quaternion.Euler(Mathf.Clamp(cameraRotation.y, minY, maxY), 0f, 0f);
+    }
 
-        transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
-        transform.LookAt(target.position + Vector3.up * 1.5f);
+    private void OnDisable()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        InputManager.onMouseDelta -= SetDirection;
     }
 }

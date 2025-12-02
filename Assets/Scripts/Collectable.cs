@@ -19,7 +19,7 @@ public class Collectable : MonoBehaviour
             if (collectSound != null)
                 AudioSource.PlayClipAtPoint(collectSound, transform.position);
 
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

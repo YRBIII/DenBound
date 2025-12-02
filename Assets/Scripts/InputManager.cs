@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
     public static InputManager Instance { get; private set; }
 
     public static Action<float> OnJump;
+    public static Action<Vector2> onMouseDelta;
     public static Action<Vector2> OnMove; // 🟢 new movement event
     public static Action OnMenuAction;
     public static Action OnSelect;
@@ -45,6 +46,14 @@ public class InputManager : MonoBehaviour
         actions.MouseAndKeyboard.NavigateUp.performed += InvokeNavigateUp;
         actions.MouseAndKeyboard.NavigateDown.performed += InvokeNavigateDown;
 
+        actions.MouseAndKeyboard.MouseDelta.performed += InvokeMouseDelta;
+        actions.MouseAndKeyboard.MouseDelta.canceled += InvokeMouseDelta;
+
+    }
+
+    private void InvokeMouseDelta(InputAction.CallbackContext ctx)
+    {
+        onMouseDelta?.Invoke(ctx.ReadValue<Vector2>());
     }
 
     private void OnDisable()
@@ -64,23 +73,27 @@ public class InputManager : MonoBehaviour
         actions.MouseAndKeyboard.NavigateUp.performed -= InvokeNavigateUp;
         actions.MouseAndKeyboard.NavigateDown.performed -= InvokeNavigateDown;
 
+        actions.MouseAndKeyboard.MouseDelta.performed -= InvokeMouseDelta;
+        actions.MouseAndKeyboard.MouseDelta.canceled -= InvokeMouseDelta;
+
+
 
         actions.Disable();
     }
 
     private void InvokeNavigateUp(InputAction.CallbackContext ctx)
     {
-        OnNavigateUp.Invoke();
+        OnNavigateUp?.Invoke();
     }
 
     private void InvokeNavigateDown(InputAction.CallbackContext ctx)
     {
-        OnNavigateDown.Invoke();
+        OnNavigateDown?.Invoke();
     }
 
     private void InvokeMenuAction(InputAction.CallbackContext ctx)
     {
-        OnMenuAction.Invoke();
+        OnMenuAction?.Invoke();
     }
 
     private void InvokeSelect(InputAction.CallbackContext ctx)
