@@ -5,13 +5,9 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float rotationSpeed = 10f;
 
     private Rigidbody rb;
     private Vector2 inputVector;
-
-    [Header("References")]
-    [SerializeField] private Transform cameraTransform; // assign Main Camera here
 
     private void OnEnable()
     {
@@ -27,8 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-        rb.useGravity = true; // make sure gravity is on
-        rb.isKinematic = false;
+        rb.useGravity = true;
     }
 
     private void HandleMoveInput(Vector2 input)
@@ -38,32 +33,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (cameraTransform == null) return;
+        // Player forward/right already matches camera rotation
+        Vector3 forward = transform.forward;
+        forward.y = 0;
+        forward.Normalize();
 
-        Vector3 camForward = cameraTransform.forward;
-        camForward.y = 0f;
-        camForward.Normalize();
+        Vector3 right = transform.right;
+        right.y = 0;
+        right.Normalize();
 
-        Vector3 camRight = cameraTransform.right;
-        camRight.y = 0f;
-        camRight.Normalize();
+        Vector3 move = forward * inputVector.y + right * inputVector.x;
+        move.Normalize();
 
-        Vector3 move = camForward * inputVector.y + camRight * inputVector.x;
-        move.Normalize(); // prevent diagonal speed boost
+        Vector3 targetVel = move * moveSpeed;
+        targetVel.y = rb.velocity.y;
 
-        // Keep existing Y velocity (gravity)
-        Vector3 targetVelocity = move * moveSpeed;
-        Vector3 currentVelocity = rb.velocity;
-        targetVelocity.y = currentVelocity.y;
-
-        rb.velocity = targetVelocity;
-
-        // Rotate player to face movement direction
-        if (move.sqrMagnitude > 0.01f)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(move);
-            rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
-        }
+        rb.velocity = targetVel;
     }
-
 }
