@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Player forward/right already matches camera rotation
+        // Player forward
         Vector3 forward = transform.forward;
         forward.y = 0;
         forward.Normalize();

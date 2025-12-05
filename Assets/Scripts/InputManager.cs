@@ -8,7 +8,7 @@ public class InputManager : MonoBehaviour
 
     public static Action<float> OnJump;
     public static Action<Vector2> onMouseDelta;
-    public static Action<Vector2> OnMove; // 🟢 new movement event
+    public static Action<Vector2> OnMove; //  new movement event
     public static Action OnMenuAction;
     public static Action OnSelect;
     public static Action OnNavigateUp;
@@ -35,7 +35,7 @@ public class InputManager : MonoBehaviour
         actions.MouseAndKeyboard.Jump.performed += InvokeJump;
         actions.MouseAndKeyboard.Jump.canceled += InvokeJump;
 
-        actions.MouseAndKeyboard.Move.performed += InvokeMove; // 🟢 listen for movement
+        actions.MouseAndKeyboard.Move.performed += InvokeMove; 
         actions.MouseAndKeyboard.Move.canceled += InvokeMove;
 
         actions.MouseAndKeyboard.MenuAction.performed += InvokeMenuAction;
