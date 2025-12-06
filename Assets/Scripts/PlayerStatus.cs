@@ -4,59 +4,62 @@ using UnityEngine.UI;
 public class PlayerStatus : ObjectStatus
 {
     [Header("Player UI & Sounds")]
-    [SerializeField] private Slider playerHealthSlider; // Slider to display player's health in UI
-    [SerializeField] private AudioClip jumpSound;       // Sound to play when the player jumps
+    [SerializeField] private Slider playerHealthSlider;
+    [SerializeField] private AudioClip jumpSound;
 
     private void OnEnable()
     {
         InputManager.OnJump += HandleJump;
-        Collectable.collect += OnBerryCollected; // Subscribe to berry collection
+
+        // ORIGINAL collect event (keep this!)
+        Collectable.collect += OnBerryCollected;
     }
 
     private void OnDisable()
     {
         InputManager.OnJump -= HandleJump;
-        Collectable.collect -= OnBerryCollected; // Unsubscribe to avoid errors
-    }
 
-    private void HandleJump(float value)
-    {
-        if (value > 0f) // Detect start of jump input
-        {
-            PlayJumpSound(); // Play jump sound
-        }
+        // Unsubscribe normally
+        Collectable.collect -= OnBerryCollected;
     }
 
     private void Start()
     {
         if (playerHealthSlider != null)
-            playerHealthSlider.value = health; // Health slider to match starting health
+            playerHealthSlider.value = health;
+    }
+
+    private void HandleJump(float value)
+    {
+        if (value > 0f)
+            PlayJumpSound();
     }
 
     public new void Damage(float damage, IDamageable.DamageType type)
     {
-        base.Damage(damage, type); // Call base damage logic from ObjectStatus
+        base.Damage(damage, type);
 
         if (playerHealthSlider != null)
-            playerHealthSlider.value = health; // Update UI to match current health
+            playerHealthSlider.value = health;
     }
 
+    // MUST match Collectable.collect (int amount, bool isPoison)
     private void OnBerryCollected(int amount, bool isPoison)
     {
         if (isPoison)
         {
-            // Poisoned berries reduce player's health
+            // Poison reduces health
             Damage(20f, IDamageable.DamageType.Poison);
         }
         else
         {
-            // Non-poison berries could myabe heal the player or just be counted
+            // Safe berry (no health effect unless you add one)
         }
     }
 
     public void PlayJumpSound()
     {
         if (jumpSound != null)
-            AudioManager.instance.PlaySound(jumpSound, 0.8f); // Play jump sound via AudioManager
+            AudioManager.instance.PlaySound(jumpSound, 0.8f);
     }
 }

@@ -6,7 +6,8 @@ public interface IDamageable
         Spike,
         Explosion,
         Falling,
-        Poison
+        Poison,
+        Cold
     };
     void Damage(float damage, DamageType type);
 }
