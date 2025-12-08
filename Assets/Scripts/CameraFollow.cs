@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] [Range(0.1f, 1f)] private float mouseSpeed = 1f;
+    [SerializeField] [Range(0.1f, 2f)] private float mouseSpeed = 2f;
     [SerializeField] private float maxY = 60;
     [SerializeField] private float minY = -40;
     [SerializeField] private bool invertY;

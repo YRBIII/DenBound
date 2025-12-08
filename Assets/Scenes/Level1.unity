@@ -2203,7 +2203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1346384233}
-  mouseSpeed: 1
+  mouseSpeed: 0.697
   maxY: 60
   minY: 10
   invertY: 0
