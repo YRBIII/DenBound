@@ -5305,7 +5305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Head to you den to start hibernating.
+  m_text: 'Head to your den to start hibernating.
 
     Hurry, before you freeze to
     death!'
