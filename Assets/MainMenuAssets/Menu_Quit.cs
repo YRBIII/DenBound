@@ -2,20 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 #if UNITY_EDITOR
-using UnityEditor; // Needed to stop Play mode when testing in the Editor
+using UnityEditor;
 #endif
 
-// This class handles the Quit menu option and implements ISelectable
+// Handles the Quit option in the menu
 public class Menu_Quit : MonoBehaviour, ISelectable
 {
+    // Quits the game when this menu option is selected
     public void Select()
     {
 #if UNITY_EDITOR
-        // In the Unity Editor, stops Play mode
-        Debug.Log("Quit selected, stopping Play mode in Editor");
-        EditorApplication.isPlaying = false; // Stop Play mode
+        // Stops Play mode when testing inside the Unity Editor
+        Debug.Log("Quit selected");
+        EditorApplication.isPlaying = false;
 #else
-        Application.Quit(); 
+        // Quits the application in a built version of the game
+        Application.Quit();
 #endif
     }
 }

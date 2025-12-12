@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
     private uint selectedOption = 0; // Currently highlighted menu option
     [SerializeField] private GameObject[] options; // Menu option UI elements
     private Menu_ChangeCanvas changeCanvas; // Reference to canvas switching script
+    [SerializeField] private bool singleOptionMenu;
+
 
     private void OnEnable()
     {
@@ -53,7 +55,16 @@ public class UIManager : MonoBehaviour
     // Call Select() on the currently highlighted option
     private void Select()
     {
-        options[selectedOption].GetComponent<ISelectable>().Select();
+        if (options == null || options.Length == 0)
+            return;
+
+        var selectable = options[selectedOption].GetComponent<ISelectable>();
+        if (selectable != null)
+        {
+            selectable.Select();
+        }
+        Debug.Log("Enter Pressed");
+
     }
 
     // Go back using canvas switcher if available
@@ -70,4 +81,5 @@ public class UIManager : MonoBehaviour
         InputManager.OnSelect -= Select;
         InputManager.OnMenuAction -= Back;
     }
+
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Handles physics-based player movement using Rigidbody and input events
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,16 +10,19 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private Vector2 inputVector;
 
+    // Subscribes to movement input events
     private void OnEnable()
     {
         InputManager.OnMove += HandleMoveInput;
     }
 
+    // Unsubscribes from movement input events
     private void OnDisable()
     {
         InputManager.OnMove -= HandleMoveInput;
     }
 
+    // Initializes Rigidbody settings for player movement
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,14 +30,15 @@ public class PlayerMovement : MonoBehaviour
         rb.useGravity = true;
     }
 
+    // Receives and stores movement input
     private void HandleMoveInput(Vector2 input)
     {
         inputVector = input;
     }
 
+    // Applies movement at a fixed timestep
     private void FixedUpdate()
     {
-        // Player forward
         Vector3 forward = transform.forward;
         forward.y = 0;
         forward.Normalize();

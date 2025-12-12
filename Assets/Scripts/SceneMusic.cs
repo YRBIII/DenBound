@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Handles background music playback for a specific scene
 public class SceneMusic : MonoBehaviour
 {
     [SerializeField] private AudioClip music;
 
+    // Stops any existing music and starts this scene’s background track
     private void Start()
     {
-        // stop any music from the previous scene
         if (AudioManager.instance != null)
             AudioManager.instance.StopAllMusicIfAny();
 
-        // then play this scene’s background music
         var source = GetComponent<AudioSource>();
         if (source != null && music != null)
         {
